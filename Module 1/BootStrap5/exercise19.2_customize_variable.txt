@@ -1,0 +1,26 @@
+<!-- Customize primary colors and border radius via _variables.scss and recompile Bootstrap.
+
+Step-by-step:
+
+1.Create a new file _custom-variables.scss and override Bootstrap variables there:
+
+scss
+
+// _custom-variables.scss
+$primary: #ff5722;          // Change primary color to orange
+$border-radius: 1rem;       // Increase border-radius globally
+
+2.Create a main Sass file (custom.scss) that imports your variables before Bootstrap:
+
+scss
+
+// custom.scss
+@import "custom-variables"; // Import your overrides first
+@import "node_modules/bootstrap/scss/bootstrap"; // Then import Bootstrap
+
+3.Compile your Sass:
+
+bash
+npx sass custom.scss custom.css
+
+4.Use the new custom.css in your HTML (same as before). -->

@@ -1,0 +1,10 @@
+Bootstrap Folder Structure:
+
+- css/  
+  Contains all the compiled CSS files like `bootstrap.min.css` and source maps. Used to style your HTML.
+
+- js/  
+  Contains JavaScript files, including `bootstrap.bundle.min.js` which includes Bootstrap's JS plugins and dependencies like Popper.js. Enables interactive components (modals, dropdowns, tooltips, etc.).
+
+- icons/  
+  Contains SVG files and fonts for Bootstrap Icons, which are a collection of vector icons that can be used easily in projects.

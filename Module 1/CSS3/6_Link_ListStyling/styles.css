@@ -1,0 +1,13 @@
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: red; text-decoration: underline; }
+a:active { color: green; }
+
+ul.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.nav li {
+  margin: 10px 0;
+}

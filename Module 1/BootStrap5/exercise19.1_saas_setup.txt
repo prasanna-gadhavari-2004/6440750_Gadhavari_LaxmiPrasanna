@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Custom Sass Setup</title>
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-primary">Bootstrap with Custom Sass Setup</h1>
+    <button class="btn btn-success">Success Button</button>
+  </div>
+</body>
+</html>
+
+<!-- Step-by-step:
+
+1.Initialize npm project (in your project folder, run in terminal):
+bash
+npm init -y
+
+2.Install Bootstrap and Sass:
+bash
+npm install bootstrap sass
+
+3.Create your Sass file (e.g., custom.scss) in your project folder:
+scss
+@import "node_modules/bootstrap/scss/bootstrap";
+
+4.Compile Sass to CSS with the command:
+bash
+npx sass custom.scss custom.css -->

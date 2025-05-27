@@ -1,0 +1,9 @@
+Open Chrome → F12 or right-click → Inspect
+
+Go to Device Toolbar → Choose phone/tablet
+
+Inspect styles, layout, and responsiveness
+
+Use Network tab to confirm external CSS loads (e.g., styles.css)
+
+Use Console tab to log JS errors

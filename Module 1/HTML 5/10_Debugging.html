@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debugging Demo</title>
+  <style>
+    /* Intentional typo for debugging */
+    .header {
+      background-color: lightblue; /* Typo: should be 'background-color' */
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content {
+      margin: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Community Events</h1>
+  </div>
+
+  <div class="content">
+    <p>Welcome to the Local Community Portal.</p>
+    <button onclick="showAlert()">Click Me</button>
+  </div>
+
+  <script>
+    // Intentional error: misspelled function name
+    function showAlet() {
+      alert("Thanks for clicking!");
+    }
+
+    console.log("Page loaded successfully.");
+  </script>
+
+</body>
+</html>
+<!-- Objective: Debug and inspect layout/script using DevTools.
+
+Instructions for Report (No code output required):
+
+1.Open the page in Google Chrome.
+
+2.Press F12 or right-click → Inspect.
+
+3.Use:
+
+Elements Tab: Modify layout/styling live.
+
+Console Tab: View JS errors or logs (console.log()).
+
+Sources Tab: Add breakpoints and step through code.
+
+Network Tab: Confirm CSS/JS files are loading correctly. -->

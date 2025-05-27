@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.description {
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: capitalize;
+}

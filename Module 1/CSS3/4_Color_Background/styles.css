@@ -1,0 +1,17 @@
+body {
+  background-image: url('background.jpg');
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: #333333;
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+.header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 20px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+    <style>
+        input, select, textarea {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Feedback</h2>
+
+    <form>
+        <label>Phone Number:
+            <input type="text" id="phone" onblur="validatePhone()">
+        </label>
+
+        <label>Event Fee:
+            <select id="eventFee" onchange="showFee()">
+                <option value="">--Select--</option>
+                <option value="Free">Free</option>
+                <option value="$10">$10</option>
+                <option value="$20">$20</option>
+            </select>
+        </label>
+
+        <p id="feeDisplay"></p>
+
+        <label>Feedback:
+            <textarea id="feedback" onkeydown="countChars()"></textarea>
+        </label>
+        <p>Characters: <span id="charCount">0</span></p>
+
+        <button type="button" onclick="showConfirm()">Submit Feedback</button>
+    </form>
+
+    <img src="event.jpg" alt="Event" ondblclick="enlargeImage(this)" style="width: 200px; border: 2px solid gray;">
+
+    <script>
+        function validatePhone() {
+            const phone = document.getElementById("phone").value;
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+            }
+        }
+
+        function showFee() {
+            const fee = document.getElementById("eventFee").value;
+            document.getElementById("feeDisplay").textContent = "Selected Fee: " + fee;
+        }
+
+        function countChars() {
+            const count = document.getElementById("feedback").value.length;
+            document.getElementById("charCount").textContent = count;
+        }
+
+        function showConfirm() {
+            alert("Thank you for your feedback!");
+        }
+
+        function enlargeImage(img) {
+            img.style.width = "400px";
+        }
+    </script>
+
+</body>
+</html>

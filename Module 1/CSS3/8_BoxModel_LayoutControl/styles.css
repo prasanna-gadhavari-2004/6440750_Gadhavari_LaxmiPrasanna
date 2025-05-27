@@ -1,0 +1,18 @@
+.eventCard {
+  border: 1px solid #aaa;
+  padding: 20px;
+  margin: 15px;
+  outline: 2px dashed red;
+}
+
+.inputBox {
+  outline: 3px solid orange;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.removed {
+  display: none;
+}
